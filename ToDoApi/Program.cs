@@ -27,7 +27,7 @@ app.MapGet("api/todo/{id}", async (string id, AppDbContext context) =>
 });
 
 //Create todo
-app.MapPost("api/todo", async([FromBody] ToDo newToDo, AppDbContext context) =>
+app.MapPost("api/todo", async(ToDo newToDo, AppDbContext context) =>
 {
     try
     {
@@ -42,16 +42,16 @@ app.MapPost("api/todo", async([FromBody] ToDo newToDo, AppDbContext context) =>
 });
 
 //Edit todo
-app.MapPut("api/todo", async ([FromBody] ToDo changeToDo, AppDbContext context) =>
+app.MapPut("api/todo", async (ToDo changeToDo, AppDbContext context) =>
 {
-    var toDo = await context.ToDos.FirstOrDefaultAsync(x => x.Id == changeToDo.Id);
+    var toDoModel = await context.ToDos.FindAsync(changeToDo.Id);
 
-    if (toDo == null)
+    if (toDoModel == null)
         return Results.NotFound();
 
     try
     {
-        context.ToDos.Update(changeToDo);
+        toDoModel.Name = changeToDo.Name;
         await context.SaveChangesAsync();
         return Results.Ok("ToDo changed");
     }
