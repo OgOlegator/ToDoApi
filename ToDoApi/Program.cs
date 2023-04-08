@@ -31,9 +31,9 @@ app.MapPost("api/todo", async(ToDo newToDo, AppDbContext context) =>
 {
     try
     {
-        context.ToDos.Add(newToDo);
+        await context.ToDos.AddAsync(newToDo);
         await context.SaveChangesAsync();
-        return Results.Created("", "ToDo created");
+        return Results.Created($"api/todo/{newToDo.Id}", newToDo);
     }
     catch
     {
