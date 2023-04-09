@@ -1,6 +1,6 @@
 # ToDoApi
 
-Приложение разработнао в формате Minimal Api
+Приложение реализовано в формате Minimal Api
 
 Api поддерживает вызов по 5 маршрутам (endpoint):
 - GET api/todo - get all;
