@@ -26,6 +26,6 @@ Api поддерживает вызов по 5 маршрутам (endpoint):
 Папка Modules/ToDos содержит:
 - Репозиторий для работы с данными ToDo
 - Модель ToDo
-- Endpoints 
+- Классы реализующие логику работы endpoints 
 
 Реализация проекта подобной структуры была вдохновлена статьей: https://habr.com/ru/companies/skbkontur/articles/723840/
