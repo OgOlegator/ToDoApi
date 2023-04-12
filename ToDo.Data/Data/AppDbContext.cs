@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Hosting;
-using ToDoApi.Models;
+//using Microsoft.Extensions.Hosting;
+using ToDos.Core.Models;
 
-namespace ToDoApi.Data
+namespace ToDos.Persistence.Data
 {
     public class AppDbContext : DbContext
     {

@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace ToDoApi.Migrations
+namespace ToDos.Persistence.Migrations
 {
     /// <inheritdoc />
     public partial class ToDoApiInitialDb : Migration

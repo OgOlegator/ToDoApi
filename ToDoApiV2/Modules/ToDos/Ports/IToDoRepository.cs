@@ -1,4 +1,4 @@
-﻿using ToDoApiV2.Models;
+﻿using ToDos.Core.Models;
 
 namespace ToDoApiV2.Modules.ToDos.Ports
 {

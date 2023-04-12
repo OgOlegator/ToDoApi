@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
-using ToDoApiV2.Data;
-using ToDoApiV2.Models;
+using ToDos.Persistence.Data;
+using ToDos.Core.Models;
 using ToDoApiV2.Modules.ToDos.Ports;
 
 namespace ToDoApiV2.Modules.ToDos.Adapters

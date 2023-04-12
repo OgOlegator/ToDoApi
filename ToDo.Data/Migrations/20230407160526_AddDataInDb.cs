@@ -4,7 +4,7 @@
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace ToDoApi.Migrations
+namespace ToDos.Persistence.Migrations
 {
     /// <inheritdoc />
     public partial class AddDataInDb : Migration

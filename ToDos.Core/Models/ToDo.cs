@@ -1,4 +1,4 @@
-﻿namespace ToDoApiV2.Models
+﻿namespace ToDos.Core.Models
 {
     public class ToDo
     {

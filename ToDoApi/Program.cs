@@ -1,7 +1,6 @@
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ToDoApi.Data;
-using ToDoApi.Models;
+using ToDos.Persistence.Data;
+using ToDos.Core.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
