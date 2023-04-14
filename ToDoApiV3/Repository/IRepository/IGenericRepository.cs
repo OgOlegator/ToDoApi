@@ -3,15 +3,15 @@
     public interface IGenericRepository<TEntity> where TEntity : class
     {
 
-        IEnumerable<TEntity> Get();
+        Task<IEnumerable<TEntity>> GetAsync();
 
-        TEntity GetById(string id);
+        Task<TEntity> GetByIdAsync(string id);
 
-        void Create(TEntity item);
+        Task CreateAsync(TEntity item);
 
-        void Update(TEntity item);
+        Task UpdateAsync(TEntity item);
 
-        void Delete(TEntity item);
+        Task DeleteAsync(TEntity item);
         
     }
 }
